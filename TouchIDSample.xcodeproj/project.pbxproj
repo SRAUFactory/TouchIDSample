@@ -12,6 +12,7 @@
 		4BC28D3421354975005B1ED4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BC28D3221354975005B1ED4 /* Main.storyboard */; };
 		4BC28D3621354977005B1ED4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BC28D3521354977005B1ED4 /* Assets.xcassets */; };
 		4BC28D3921354977005B1ED4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BC28D3721354977005B1ED4 /* LaunchScreen.storyboard */; };
+		4BC28D42213549AD005B1ED4 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC28D41213549AD005B1ED4 /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4BC28D3521354977005B1ED4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BC28D3821354977005B1ED4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4BC28D3A21354977005B1ED4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BC28D41213549AD005B1ED4 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BC28D42213549AD005B1ED4 /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				4BC28D2D21354975005B1ED4 /* TouchIDSample */,
 				4BC28D2C21354975005B1ED4 /* Products */,
+				4BC28D40213549AC005B1ED4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				4BC28D3A21354977005B1ED4 /* Info.plist */,
 			);
 			path = TouchIDSample;
+			sourceTree = "<group>";
+		};
+		4BC28D40213549AC005B1ED4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BC28D41213549AD005B1ED4 /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

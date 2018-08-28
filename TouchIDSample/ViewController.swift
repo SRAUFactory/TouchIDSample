@@ -7,12 +7,26 @@
 //
 
 import UIKit
+import LocalAuthentication
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let context = LAContext()
+        var error : NSError?
+        if context.canEvaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            context.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, localizedReason: "サンプル確認のための認証チェック") { (success, failure) in
+                if (success) {
+                    NSLog("認証成功")
+                } else {
+                    NSLog("認証失敗：" + failure.debugDescription)
+                }
+            }
+        } else {
+            NSLog("TouchID非対応")
+        }
     }
 
     override func didReceiveMemoryWarning() {
