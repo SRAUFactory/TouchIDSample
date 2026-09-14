@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:TouchIDSample.xcodeproj">
+      location = "self:">
+   </FileRef>
+   <FileRef
+      location = "group:SceneDelegate.swift">
    </FileRef>
 </Workspace>

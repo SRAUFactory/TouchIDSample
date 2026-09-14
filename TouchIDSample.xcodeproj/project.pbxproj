@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 100;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -29,11 +29,9 @@
 /* Begin PBXFrameworksBuildPhase section */
 		4BC28D2821354975005B1ED4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				4BC28D42213549AD005B1ED4 /* LocalAuthentication.framework in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -89,8 +87,6 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = TouchIDSample;
 			productName = TouchIDSample;
 			productReference = 4BC28D2B21354975005B1ED4 /* TouchIDSample.app */;
@@ -112,7 +108,6 @@
 				};
 			};
 			buildConfigurationList = 4BC28D2621354975005B1ED4 /* Build configuration list for PBXProject "TouchIDSample" */;
-			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -120,6 +115,7 @@
 				Base,
 			);
 			mainGroup = 4BC28D2221354975005B1ED4;
+			preferredProjectObjectVersion = 100;
 			productRefGroup = 4BC28D2C21354975005B1ED4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,25 +128,21 @@
 /* Begin PBXResourcesBuildPhase section */
 		4BC28D2921354975005B1ED4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				4BC28D3921354977005B1ED4 /* LaunchScreen.storyboard in Resources */,
 				4BC28D3621354977005B1ED4 /* Assets.xcassets in Resources */,
 				4BC28D3421354975005B1ED4 /* Main.storyboard in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4BC28D2721354975005B1ED4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				4BC28D3121354975005B1ED4 /* ViewController.swift in Sources */,
 				4BC28D2F21354975005B1ED4 /* AppDelegate.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
@@ -174,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4BC28D3B21354977005B1ED4 /* Debug */ = {
+		4BC28D3B21354977005B1ED4 /* Debug configuration for PBXProject "TouchIDSample" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -225,7 +217,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -234,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		4BC28D3C21354977005B1ED4 /* Release */ = {
+		4BC28D3C21354977005B1ED4 /* Release configuration for PBXProject "TouchIDSample" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -279,7 +271,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -288,13 +280,14 @@
 			};
 			name = Release;
 		};
-		4BC28D3E21354977005B1ED4 /* Debug */ = {
+		4BC28D3E21354977005B1ED4 /* Debug configuration for PBXNativeTarget "TouchIDSample" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W35ZZNE699;
+				DEVELOPMENT_TEAM = 62497MN9RR;
 				INFOPLIST_FILE = TouchIDSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,13 +299,14 @@
 			};
 			name = Debug;
 		};
-		4BC28D3F21354977005B1ED4 /* Release */ = {
+		4BC28D3F21354977005B1ED4 /* Release configuration for PBXNativeTarget "TouchIDSample" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W35ZZNE699;
+				DEVELOPMENT_TEAM = 62497MN9RR;
 				INFOPLIST_FILE = TouchIDSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,19 +324,17 @@
 		4BC28D2621354975005B1ED4 /* Build configuration list for PBXProject "TouchIDSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4BC28D3B21354977005B1ED4 /* Debug */,
-				4BC28D3C21354977005B1ED4 /* Release */,
+				4BC28D3B21354977005B1ED4 /* Debug configuration for PBXProject "TouchIDSample" */,
+				4BC28D3C21354977005B1ED4 /* Release configuration for PBXProject "TouchIDSample" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		4BC28D3D21354977005B1ED4 /* Build configuration list for PBXNativeTarget "TouchIDSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4BC28D3E21354977005B1ED4 /* Debug */,
-				4BC28D3F21354977005B1ED4 /* Release */,
+				4BC28D3E21354977005B1ED4 /* Debug configuration for PBXNativeTarget "TouchIDSample" */,
+				4BC28D3F21354977005B1ED4 /* Release configuration for PBXNativeTarget "TouchIDSample" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
